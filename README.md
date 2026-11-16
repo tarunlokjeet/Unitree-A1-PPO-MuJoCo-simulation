@@ -2,10 +2,7 @@
 
 Train a 12-DoF Unitree A1 to track a forward speed command. Physics is MuJoCo. The policy is PPO (Stable-Baselines3) on the **CPU build of PyTorch**. The same actor is then replayed in Gazebo, and the speed gap is measured. See [docs/gazebo_transfer.md](docs/gazebo_transfer.md).
 
-> [!WARNING]
-> Do not `pip install torch` from PyPI on Linux. That wheel is the CUDA build, several gigabytes. This repo installs `torch==2.14.1+cpu` from the PyTorch CPU index. The training entry point refuses to start on a CUDA build.
 
-Isaac Lab, a physical robot, and Micro-ROS are out of this version.
 
 ## What runs today
 
